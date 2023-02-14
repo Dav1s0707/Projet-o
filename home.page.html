@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">numero1</ion-label>
+    <ion-input [(ngModel)]="n1" placeholder="Enter text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Numero do cartao</ion-label>
+    <ion-input [(ngModel)]="n2" placeholder="Enter text"></ion-input>
+  </ion-item>
+  <br>
+
+  <ion-button expand="block" (click)="somar()">Somar</ion-button>
+  <ion-label>{{res}}</ion-label>
+</ion-content>
